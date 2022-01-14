@@ -7,6 +7,7 @@ class ProductDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO change color
     return Scaffold(
       appBar: AppBar(
         title: Text('Product Detail $productIndex'),
