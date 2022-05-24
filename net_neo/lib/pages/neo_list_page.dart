@@ -3,7 +3,7 @@ import 'package:net_neo/models/neo.dart';
 import 'package:net_neo/services/neo_service.dart';
 
 class NeoListPage extends StatefulWidget {
-  NeoListPage({Key? key}) : super(key: key);
+  const NeoListPage({super.key});
 
   @override
   State<NeoListPage> createState() => _NeoListPageState();
