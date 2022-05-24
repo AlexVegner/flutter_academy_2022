@@ -1,11 +1,16 @@
-import 'package:edu_simple_server/controllers/product_controller.dart';
-import 'package:shelf_plus/shelf_plus.dart';
+import 'package:shelf/shelf.dart';
+import 'package:shelf_router/shelf_router.dart';
+
+import 'controllers/product_controller.dart';
 
 Handler buildRouter() {
-  final app = Router().plus;
-  final appV1 = Router();
-  app.all('/v1', appV1);
-  final productController = ProductController();
-  appV1.all('/products', productController.router);
-  return productController.router;
+  final app = Router();
+  app.get('/ping', (Request request) => Response.ok('body'));
+  app.mount(
+    '/v1',
+    Router()
+      ..get('/ping', (Request request) => Response.ok('test'))
+      ..mount('/products', ProductController().router),
+  );
+  return app;
 }

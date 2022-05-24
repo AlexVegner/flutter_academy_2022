@@ -8,7 +8,8 @@ part of 'product_controller.dart';
 
 Router _$ProductControllerRouter(ProductController service) {
   final router = Router();
-  router.add('GET', r'/products/', service.listProducts);
-  router.add('GET', r'/products/<productId>', service.fetchProduct);
+  router.add('GET', r'/', service.listProducts);
+  router.add('GET', r'/ping', service.ping);
+  router.add('GET', r'/<productId>', service.fetchProduct);
   return router;
 }
