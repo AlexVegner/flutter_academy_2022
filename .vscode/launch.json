@@ -1,0 +1,68 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "edu_models",
+      "cwd": "edu_models",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "edu_models (profile mode)",
+      "cwd": "edu_models",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "edu_models (release mode)",
+      "cwd": "edu_models",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "edu_state",
+      "cwd": "edu_state",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "edu_state (profile mode)",
+      "cwd": "edu_state",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "edu_state (release mode)",
+      "cwd": "edu_state",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "net_neo",
+      "cwd": "net_neo",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "net_neo (profile mode)",
+      "cwd": "net_neo",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "net_neo (release mode)",
+      "cwd": "net_neo",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
