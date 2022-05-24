@@ -11,5 +11,6 @@ Router _$ProductControllerRouter(ProductController service) {
   router.add('GET', r'/', service.listProducts);
   router.add('GET', r'/ping', service.ping);
   router.add('GET', r'/<productId>', service.fetchProduct);
+  router.add('POST', r'/', service.createProduct);
   return router;
 }
